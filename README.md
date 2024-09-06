@@ -10,8 +10,9 @@
 >> pip install -r requirements.txt
 
 4.다운로드할 키워드 입력
-AutoCrawler-master 폴더 안의 keywords.txt을 연다
-검색하고하는 키워드를 한 줄에 한 개씩 쓴 후 저장
+AutoCrawler-master 폴더 안의 keywords.txt을 연다.     
+검색하고하는 키워드를 한 줄에 한 개씩 쓴 후 저장. 
+안되면 메모장에
 
 예시)
 감자 /
