@@ -1,3 +1,22 @@
+# dli 
+Getting Started with AI on Jetson Nano
+
+>.1. Jetson Nano Setting 준비물
+  
+    - jetson nano 4gb
+  ![Uploading 화면 캡처 2024-09-06 152822.png…]()
+
+    - c type power adapter
+  
+    - 와이파이 동글
+  
+    - 웹캠(USB Camera), 또는 CSI Camera (라즈베리파이 V2)
+  
+    - 64기가 이상 마이크로sd카드
+
+    - 그외 쿨링펜, lcd, 또는 모니터. hdmi
+
+
 # 데이터 크롤링(data crawling)
 1.Chrome 설치
 
@@ -32,6 +51,9 @@ python main.py
 ~~~ bash
  python main.py --limit 20
 ~~~
+
+
+
 
 
 # yolo 가상환경 만들기
