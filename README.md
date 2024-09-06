@@ -68,7 +68,7 @@ sudo apt-get upgrade
 sudo apt-get update
 sudo apt install python3-pip
 
-doyouwant tocontinue?Y
+do you want to continue? Y
 sudo-Hpip3install-Ujetson-stats
 ~~~
 
