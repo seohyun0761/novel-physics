@@ -22,6 +22,7 @@ In order to continue the installation process, please review the license
 agreement.
 Please, press ENTER to continue
 >>> q
+
 Copyright (c) 2016-2017 Jonathan J. Helmus
 All rights reserved.
 
