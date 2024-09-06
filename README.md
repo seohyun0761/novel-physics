@@ -1,4 +1,7 @@
 # 젯슨나노
+
+![화면 캡처 2024-09-06 152822](https://github.com/user-attachments/assets/99dc679c-98e3-477e-9ae4-8ffc1b121021)
+
 Getting Started with AI on Jetson Nano 
 
 **1. Jetson Nano Setting 준비물**
@@ -15,6 +18,7 @@ Getting Started with AI on Jetson Nano
 
     - 그외 쿨링펜, lcd, 또는 모니터. hdmi
     
+    
 **2. jetson nano에 대하여**
 
 welcome 부터 따라하기 https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=block-v1:DLI+S-RX-02+V2+type@vertical+block@aba5104413ae454c8c63a6f301925337
@@ -26,12 +30,14 @@ https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write
 
 
 **4. 이미지 굽기 위해 필요한 것들**
-
+~~~ bash
    4-1. sd card formatter  download
    4-2. balenaetcher download --->  이미지 굽기
    4-3. 제슨나노에 sd넣고 우분투 설치
+~~~
+   ![화면 캡처 2024-09-06 155525](https://github.com/user-attachments/assets/bcdcb8d9-fb5f-41c5-9e2e-9795195f973e)
+![화면 캡처 2024-09-06 155559](https://github.com/user-attachments/assets/fbbbe0aa-65b6-4a21-9226-9f866e05de58)
 
-   
 **5. 제슨 알아보고 설치하기**
 
 https://developer.nvidia.com/embedded/learn/jetson-nano-2gb-devkit-user-guide#id-.JetsonNano2GBDeveloperKitUserGuidevbatuu_v1.0-DeveloperKitSetup
@@ -43,6 +49,13 @@ https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=
 5. image regression - Face XY Project
 
 https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=block-v1:DLI+S-RX-02+V2+type@vertical+block@76a2873eb69946b4928c4f8432e04314
+
+**6. 우분투 설치**
+![화면 캡처 2024-09-06 155949](https://github.com/user-attachments/assets/cb433d38-ba60-4c78-a176-b7599c58a733)
+![화면 캡처 2024-09-06 160039](https://github.com/user-attachments/assets/094353d3-69bf-4f8c-b62a-2bdfb6b8f9a7)
+![화면 캡처 2024-09-06 160119](https://github.com/user-attachments/assets/d177b14f-35a4-4e24-8d16-b48dddf138aa)
+
+
 
 
 # 데이터 크롤링(data crawling)
