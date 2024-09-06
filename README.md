@@ -4,15 +4,18 @@ yolo는 3.8파이썬이 필요하지만 젯슨은 3.6까지 가능 그래서 가
 wget https://github.com/Archiconda/build-tools/releases/download/0.2.3/Archiconda3-0.2.3-Linux-aarch64.sh
 sudo chmod 755 Archiconda3-0.2.3-Linux-aarch64.sh
 ls
+
 wget 네트웨크 파일 다운 도구
 sudo chmod 755 파일이나 디렉토리의 권한을 설정하는 명령어
 
 ldh@ldh-desktop:~$  ./Archiconda3-0.2.3-Linux-aarch64.sh
+
 Archiconda3 conda를 통해 파이썬 환경과 패키지를 관리
 
 dli@dli-desktop:~$ sudo chmod 755 Archiconda3-0.2.3-Linux-aarch64.sh
 [sudo] password for dli: 
 dli@dli-desktop:~$ ./Archiconda3-0.2.3-Linux-aarch64.sh
+
 
  Welcome to Archiconda3 0.2.3
 
