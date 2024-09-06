@@ -55,6 +55,22 @@ https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-RX-02+V2&unit=
 ![화면 캡처 2024-09-06 160039](https://github.com/user-attachments/assets/094353d3-69bf-4f8c-b62a-2bdfb6b8f9a7)
 ![화면 캡처 2024-09-06 160119](https://github.com/user-attachments/assets/d177b14f-35a4-4e24-8d16-b48dddf138aa)
 
+**7.쿨링팬 설치와 jtop**
+>jtop : system monitoring tool
+
+terminal 열기
+~~~ bash
+dli@dli-desktop:~$ sudo apt install python3-pip
+ --컴퓨터가 물어본다   do you want to continue ? Y
+dli@dli-desktop:~$  sudo -H pip3 install -U jetson-stats
+
+sudo apt-get upgrade
+sudo apt-get update
+sudo apt install python3-pip
+
+doyouwant tocontinue?Y
+sudo-Hpip3install-Ujetson-stats
+~~~
 
 
 
