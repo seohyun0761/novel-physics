@@ -22,7 +22,8 @@ AutoCrawler-master 폴더 안의 keywords.txt을 연다
 >> python main.py
 
 >> python main.py --limit 20
-20로 재한
+>> 
+20개로 제한
 # yolo 가상환경 만들기
 yolo는 3.8파이썬이 필요하지만 젯슨은 3.6까지 가능 그래서 가상환경 필요
 
