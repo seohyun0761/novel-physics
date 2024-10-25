@@ -114,3 +114,146 @@ python main.py
 yolo는 3.8파이썬이 필요하지만 젯슨은 3.6까지 가능 그래서 가상환경 필요
 
 ![image](https://github.com/user-attachments/assets/46b318d6-3213-416e-8762-06edb70e23ec)
+
+dli@dli-desktop:~$ cd Jetson-Nano2/
+dli@dli-desktop:~/Jetson-Nano2$ cd V8
+dli@dli-desktop:~/Jetson-Nano2/V8$ pip install ultralytics
+Collecting ultralytics
+  Downloading https://files.pythonhosted.org/packages/9e/a9/96ec571cbcc52655bd463f9ca269ba4c689a41ac32cbc0bd48bf5827ab07/ultralytics-8.0.151-py3-none-any.whl (616kB)
+    100% |████████████████████████████████| 624kB 1.7MB/s 
+Collecting torch>=1.7.0 (from ultralytics)
+  Could not find a version that satisfies the requirement torch>=1.7.0 (from ultralytics) (from versions: )
+No matching distribution found for torch>=1.7.0 (from ultralytics)
+Cache entry deserialization failed, entry ignored
+You are using pip version 10.0.1, however version 24.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+dli@dli-desktop:~/Jetson-Nano2/V8$ pip install -r requirements.txt
+Collecting matplotlib>=3.2.2 (from -r requirements.txt (line 5))
+  Downloading https://files.pythonhosted.org/packages/02/81/e8276ec6ca005b3b2bfaaad0ea47dbb3a0e389ec8ab87d08e3ccbe4b2742/matplotlib-3.5.3.tar.gz (35.2MB)
+    100% |████████████████████████████████| 35.2MB 633kB/s 
+    Complete output from command python setup.py egg_info:
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-install-n7yu10oy/matplotlib/setup.py", line 349, in <module>
+        "sdist": Sdist,
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/__init__.py", line 139, in setup
+        _install_setup_requires(attrs)
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/__init__.py", line 134, in _install_setup_requires
+        dist.fetch_build_eggs(dist.setup_requires)
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/dist.py", line 514, in fetch_build_eggs
+        replace_conflicting=True,
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 777, in resolve
+        replace_conflicting=replace_conflicting
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 1060, in best_match
+        return self.obtain(req, installer)
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 1072, in obtain
+        return installer(requirement)
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/dist.py", line 581, in fetch_build_egg
+        return cmd.easy_install(req)
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/command/easy_install.py", line 676, in easy_install
+        return self.install_item(spec, dist.location, tmpdir, deps)
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/command/easy_install.py", line 702, in install_item
+        dists = self.install_eggs(spec, download, tmpdir)
+      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/command/easy_install.py", line 873, in install_eggs
+        os.path.abspath(dist_filename)
+    distutils.errors.DistutilsError: Couldn't find a setup script in /tmp/easy_install-u5xpaer4/numpy-2.1.2.tar.gz
+    
+    Edit mplsetup.cfg to change the build options; suppress output with --quiet.
+    
+    BUILDING MATPLOTLIB
+          python: yes [3.7.1 | packaged by conda-forge | (default, Feb 26 2019,
+                      04:21:53)  [GCC 7.3.0]]
+        platform: yes [linux]
+           tests: no  [skipping due to configuration]
+          macosx: no  [Mac OS-X only]
+    
+    
+    ----------------------------------------
+Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-install-n7yu10oy/matplotlib/
+You are using pip version 10.0.1, however version 24.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+dli@dli-desktop:~/Jetson-Nano2/V8$ pip install ffmpeg-python
+Collecting ffmpeg-python
+  Downloading https://files.pythonhosted.org/packages/d7/0c/56be52741f75bad4dc6555991fabd2e07b432d333da82c11ad701123888a/ffmpeg_python-0.2.0-py3-none-any.whl
+Collecting future (from ffmpeg-python)
+  Downloading https://files.pythonhosted.org/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl (491kB)
+    100% |████████████████████████████████| 491kB 1.3MB/s 
+Installing collected packages: future, ffmpeg-python
+Successfully installed ffmpeg-python-0.2.0 future-1.0.0
+You are using pip version 10.0.1, however version 24.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+dli@dli-desktop:~/Jetson-Nano2/V8$ sudo apt install tree
+[sudo] password for dli: 
+Sorry, try again.
+[sudo] password for dli: 
+Sorry, try again.
+[sudo] password for dli: 
+sudo: 3 incorrect password attempts
+dli@dli-desktop:~/Jetson-Nano2/V8$ tree -L 2
+.
+├── CITATION.cff
+├── coco128_kor.yaml
+├── coco128.yaml
+├── coco_names_kor.txt
+├── CONTRIBUTING.md
+├── detectY8.py
+├── docker
+│   ├── Dockerfile
+│   ├── Dockerfile-arm64
+│   └── Dockerfile-cpu
+├── docs
+│   ├── app.md
+│   ├── assets
+│   ├── callbacks.md
+│   ├── cfg.md
+│   ├── cli.md
+│   ├── CNAME
+│   ├── engine.md
+│   ├── hub.md
+│   ├── index.md
+│   ├── predict.md
+│   ├── python.md
+│   ├── quickstart.md
+│   ├── README.md
+│   ├── reference
+│   ├── SECURITY.md
+│   ├── stylesheets
+│   └── tasks
+├── examples
+│   ├── README.md
+│   ├── tutorial.ipynb
+│   ├── YOLOv8-CPP-Inference
+│   └── YOLOv8-OpenCV-ONNX-Python
+├── LICENSE
+├── MANIFEST.in
+├── mkdocs.yml
+├── output_video.mp4
+├── predict - 복사본.py
+├── README.md
+├── README.zh-CN.md
+├── RealSteam.py
+├── requirements.txt
+├── sample.jpg
+├── sample.mp4
+├── setup.cfg
+├── setup.py
+├── test2.py
+├── test3.py
+├── test.py
+├── tests
+│   ├── test_cli.py
+│   ├── test_engine.py
+│   └── test_python.py
+├── ultralytics
+│   ├── assets
+│   ├── hub
+│   ├── __init__.py
+│   ├── models
+│   ├── nn
+│   ├── __pycache__
+│   ├── tracker
+│   └── yolo
+└── yolov8n.pt
+
+18 directories, 45 files
+
