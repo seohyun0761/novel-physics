@@ -223,24 +223,10 @@ tree -L 2
 ```
 ![image](https://github.com/user-attachments/assets/46b318d6-3213-416e-8762-06edb70e23ec)
 ```
+
 결과
 
-git clone https://github.com/Tory-Hwang/Jetson-Nano2
-```
-```
-(yolo) dli@dli:~$ cd Jetson-Nano2/
-(yolo) dli@dli:~/Jetson-Nano2$ cd V8
-(yolo) dli@dli:~/Jetson-Nano2/V8$ pip install ultralytics
-(yolo) dli@dli:~/Jetson-Nano2/V8$ pip install -r requirements.txt 
-(yolo) dli@jdli:~/Jetson-Nano2/V8$ pip install ffmpeg-python
-(yolo) dli@dli:~/Jetson-Nano2$ sudo apt install tree
-(yolo) dli@jdli:~/Jetson-Nano2$ tree -L 2
-```
- - 여기서 cd는 파일을 변경하는 명령어다.
-   
-만약 한다면
-![IMG_0545](https://github.com/user-attachments/assets/fc1ffdc4-23f1-4f3a-af4b-9224d7f73ab9)
-이런 화면이 뜰것이다.
+
 
  - 이 위에꺼는 굳이 안해도 된다.
  - 다 했으면 https://github.com/ultralytics/ultralytics?tab=readme-ov-file 이 링크에서
