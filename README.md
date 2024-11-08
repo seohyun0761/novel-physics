@@ -221,7 +221,7 @@ sudo apt install tree
 tree -L 2
 ```
 ![image](https://github.com/user-attachments/assets/46b318d6-3213-416e-8762-06edb70e23ec)
-```
+
 
 결과
 
