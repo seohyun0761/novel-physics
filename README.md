@@ -243,10 +243,11 @@ python3 detectY8.py
 이렇게 하면 카메라가 화면에 뜬다
 
 
-https://github.com/user-attachments/assets/878e4fb5-4c20-44e5-aca2-d68592fc8f16
-***
 
-https://github.com/user-attachments/assets/57ef2d2f-0e9b-4257-810d-bb8ae9becbc7
-***
+
+https://github.com/user-attachments/assets/0857dfb9-84d8-4756-97f6-cdb7c37c7005
+
+
+
 
 
