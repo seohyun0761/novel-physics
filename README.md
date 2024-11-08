@@ -115,145 +115,138 @@ yolo는 3.8파이썬이 필요하지만 젯슨은 3.6까지 가능 그래서 가
 
 ![image](https://github.com/user-attachments/assets/46b318d6-3213-416e-8762-06edb70e23ec)
 
-dli@dli-desktop:~$ cd Jetson-Nano2/
-dli@dli-desktop:~/Jetson-Nano2$ cd V8
-dli@dli-desktop:~/Jetson-Nano2/V8$ pip install ultralytics
-Collecting ultralytics
-  Downloading https://files.pythonhosted.org/packages/9e/a9/96ec571cbcc52655bd463f9ca269ba4c689a41ac32cbc0bd48bf5827ab07/ultralytics-8.0.151-py3-none-any.whl (616kB)
-    100% |████████████████████████████████| 624kB 1.7MB/s 
-Collecting torch>=1.7.0 (from ultralytics)
-  Could not find a version that satisfies the requirement torch>=1.7.0 (from ultralytics) (from versions: )
-No matching distribution found for torch>=1.7.0 (from ultralytics)
-Cache entry deserialization failed, entry ignored
-You are using pip version 10.0.1, however version 24.0 is available.
-You should consider upgrading via the 'pip install --upgrade pip' command.
-dli@dli-desktop:~/Jetson-Nano2/V8$ pip install -r requirements.txt
-Collecting matplotlib>=3.2.2 (from -r requirements.txt (line 5))
-  Downloading https://files.pythonhosted.org/packages/02/81/e8276ec6ca005b3b2bfaaad0ea47dbb3a0e389ec8ab87d08e3ccbe4b2742/matplotlib-3.5.3.tar.gz (35.2MB)
-    100% |████████████████████████████████| 35.2MB 633kB/s 
-    Complete output from command python setup.py egg_info:
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-n7yu10oy/matplotlib/setup.py", line 349, in <module>
-        "sdist": Sdist,
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/__init__.py", line 139, in setup
-        _install_setup_requires(attrs)
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/__init__.py", line 134, in _install_setup_requires
-        dist.fetch_build_eggs(dist.setup_requires)
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/dist.py", line 514, in fetch_build_eggs
-        replace_conflicting=True,
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 777, in resolve
-        replace_conflicting=replace_conflicting
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 1060, in best_match
-        return self.obtain(req, installer)
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/pkg_resources/__init__.py", line 1072, in obtain
-        return installer(requirement)
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/dist.py", line 581, in fetch_build_egg
-        return cmd.easy_install(req)
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/command/easy_install.py", line 676, in easy_install
-        return self.install_item(spec, dist.location, tmpdir, deps)
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/command/easy_install.py", line 702, in install_item
-        dists = self.install_eggs(spec, download, tmpdir)
-      File "/home/dli/archiconda3/lib/python3.7/site-packages/setuptools/command/easy_install.py", line 873, in install_eggs
-        os.path.abspath(dist_filename)
-    distutils.errors.DistutilsError: Couldn't find a setup script in /tmp/easy_install-u5xpaer4/numpy-2.1.2.tar.gz
-    
-    Edit mplsetup.cfg to change the build options; suppress output with --quiet.
-    
-    BUILDING MATPLOTLIB
-          python: yes [3.7.1 | packaged by conda-forge | (default, Feb 26 2019,
-                      04:21:53)  [GCC 7.3.0]]
-        platform: yes [linux]
-           tests: no  [skipping due to configuration]
-          macosx: no  [Mac OS-X only]
-    
-    
-    ----------------------------------------
-Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-install-n7yu10oy/matplotlib/
-You are using pip version 10.0.1, however version 24.0 is available.
-You should consider upgrading via the 'pip install --upgrade pip' command.
-dli@dli-desktop:~/Jetson-Nano2/V8$ pip install ffmpeg-python
-Collecting ffmpeg-python
-  Downloading https://files.pythonhosted.org/packages/d7/0c/56be52741f75bad4dc6555991fabd2e07b432d333da82c11ad701123888a/ffmpeg_python-0.2.0-py3-none-any.whl
-Collecting future (from ffmpeg-python)
-  Downloading https://files.pythonhosted.org/packages/da/71/ae30dadffc90b9006d77af76b393cb9dfbfc9629f339fc1574a1c52e6806/future-1.0.0-py3-none-any.whl (491kB)
-    100% |████████████████████████████████| 491kB 1.3MB/s 
-Installing collected packages: future, ffmpeg-python
-Successfully installed ffmpeg-python-0.2.0 future-1.0.0
-You are using pip version 10.0.1, however version 24.0 is available.
-You should consider upgrading via the 'pip install --upgrade pip' command.
-dli@dli-desktop:~/Jetson-Nano2/V8$ sudo apt install tree
-[sudo] password for dli: 
-Sorry, try again.
-[sudo] password for dli: 
-Sorry, try again.
-[sudo] password for dli: 
-sudo: 3 incorrect password attempts
-dli@dli-desktop:~/Jetson-Nano2/V8$ tree -L 2
-.
-├── CITATION.cff
-├── coco128_kor.yaml
-├── coco128.yaml
-├── coco_names_kor.txt
-├── CONTRIBUTING.md
-├── detectY8.py
-├── docker
-│   ├── Dockerfile
-│   ├── Dockerfile-arm64
-│   └── Dockerfile-cpu
-├── docs
-│   ├── app.md
-│   ├── assets
-│   ├── callbacks.md
-│   ├── cfg.md
-│   ├── cli.md
-│   ├── CNAME
-│   ├── engine.md
-│   ├── hub.md
-│   ├── index.md
-│   ├── predict.md
-│   ├── python.md
-│   ├── quickstart.md
-│   ├── README.md
-│   ├── reference
-│   ├── SECURITY.md
-│   ├── stylesheets
-│   └── tasks
-├── examples
-│   ├── README.md
-│   ├── tutorial.ipynb
-│   ├── YOLOv8-CPP-Inference
-│   └── YOLOv8-OpenCV-ONNX-Python
-├── LICENSE
-├── MANIFEST.in
-├── mkdocs.yml
-├── output_video.mp4
-├── predict - 복사본.py
-├── README.md
-├── README.zh-CN.md
-├── RealSteam.py
-├── requirements.txt
-├── sample.jpg
-├── sample.mp4
-├── setup.cfg
-├── setup.py
-├── test2.py
-├── test3.py
-├── test.py
-├── tests
-│   ├── test_cli.py
-│   ├── test_engine.py
-│   └── test_python.py
-├── ultralytics
-│   ├── assets
-│   ├── hub
-│   ├── __init__.py
-│   ├── models
-│   ├── nn
-│   ├── __pycache__
-│   ├── tracker
-│   └── yolo
-└── yolov8n.pt
+    uname -a
+    wget https://github.com/Archiconda/build-tools/releases/download/0.2.3/Archiconda3-0.2.3-Linux-aarch64.sh
+    sudo chmod 755 Archiconda3-0.2.3-Linux-aarch64.sh
+    ls
+ - .sh 명령어는 쉘 스크립트를 실행하는 명령어로, 주로 자동화된 작업을 처리할 때 사용된다.
+ - wget 명령어는 터미널에서 파일을 웹에서 다운로드할 때 사용하는 명령어이다.
+##### 결과
 
-18 directories, 45 files
+  Archiconda3-0.2.3-Linux-aarch64.sh Pictures Desktop Public Documents Templates Downloads Videos examples.desktop yolov8_4gb Music
+
+     ./Archiconda3-0.2.3-Linux-aarch64.sh
+실행 중 선택이라 뜨면
+yes---> enter ---> yes in your /home/ldh/.bashrc ? [yes|no] [no] >>> yes
+이렇게 한다.
+
+    conda env list
+    conda activate base
+    jetson_release 
+
+    
+### python 3.8 가상환경 만들기
+***
+base가 아닌 native에서 실행
+
+    conda deactivate
+ - 가상환경에서 빠져 나오는 명령어임
+   
+ ```
+conda create -n yolo python=3.8 -y
+conda env list
+conda activate yolo
+ ```
+
+ - "conda activate yolo"를 실행하여 yolo 가상환경으로 진입해서 pytorch, torchvosion을 설치하는 과정이다.
+ - 결과 가상에서 설치 torch, torvosion 다운로드
+ - torch은 과학 계산과 머신러닝 알고리즘을 지원하는 프레임워크이며, 주로 PyTorch로 알려진 딥러닝 라이브러리에서 사용한다.
+ - Torchvosion은 PyTorch에서 컴퓨터 비전 작업을 쉽게 하기 위한 라이브러리로, 이미지 처리용 데이터셋, 모델, 전처리 도구를 제공한다.
+
+(yolo) dli@dli:~$
+```
+pip install -U pip wheel gdown
+```
+```
+gdown https://drive.google.com/uc?id=1hs9HM0XJ2LPFghcn7ZMOs5qu5HexPXwM
+```
+![IMG_0543](https://github.com/user-attachments/assets/70cda6f3-3c8c-49f8-a4c7-60ea7a86996e)
+이렇게 떠야 정상
+```
+gdown https://drive.google.com/uc?id=1m0d8ruUY8RvCP9eVjZw4Nc8LAwM8yuGV
+```
+![IMG_0544](https://github.com/user-attachments/assets/ea45073d-dd77-4150-a563-50f0bb8db702)
+이렇게 떠야 정상임
+ 
+아래 두 라인을 실행(library 설치) 후 torch, torchvision은 확인이 가능하였다.
+
+```
+sudo apt-get install libopenblas-base libopenmpi-dev
+sudo apt-get install libomp-dev
+pip install torch-1.11.0a0+gitbc2c6ed-cp38-cp38-linux_aarch64.whl
+pip install torchvision-0.12.0a0+9b5a3fe-cp38-cp38-linux_aarch64.whl
+python -c "import torch; print(torch.__version__)"
+```
+```
+(yolo) dli@dli:~$ python
+
+>>> import torch
+>>> import torchvision
+>>> print(torch.__version__)
+>>> print(torchvision.__version__)
+>>> print("cuda used", torch.cuda.is_available())
+cuda used True
+>>> 
+```
+***
+```
+이건 코드 아님
+(yolo) dli@dli-desktop:~$ python
+Python 3.8.13 | packaged by conda-forge | (default, Mar 25 2022, 05:56:18) 
+[GCC 10.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+ >>> import torch
+ >>> import torchvision
+ >>> print(torch.__version__)
+1.11.0a0+gitbc2c6ed
+ >>> print(torchvision.__version__)
+0.12.0a0+9b5a3fe
+ >>> print("cuda used", torch.cuda.is_available())
+cuda used True
+ >>>
+```
+***
+이렇게 떠야한다.
+위에서 true가 뜨면 ctrl + d 를 눌러서 탈출한다.
+
+```
+git clone https://github.com/Tory-Hwang/Jetson-Nano2
+```
+```
+(yolo) dli@dli:~$ cd Jetson-Nano2/
+(yolo) dli@dli:~/Jetson-Nano2$ cd V8
+(yolo) dli@dli:~/Jetson-Nano2/V8$ pip install ultralytics
+(yolo) dli@dli:~/Jetson-Nano2/V8$ pip install -r requirements.txt 
+(yolo) dli@jdli:~/Jetson-Nano2/V8$ pip install ffmpeg-python
+(yolo) dli@dli:~/Jetson-Nano2$ sudo apt install tree
+(yolo) dli@jdli:~/Jetson-Nano2$ tree -L 2
+```
+ - 여기서 cd는 파일을 변경하는 명령어다.
+   
+만약 한다면
+![IMG_0545](https://github.com/user-attachments/assets/fc1ffdc4-23f1-4f3a-af4b-9224d7f73ab9)
+이런 화면이 뜰것이다.
+
+ - 이 위에꺼는 굳이 안해도 된다.
+ - 다 했으면 https://github.com/ultralytics/ultralytics?tab=readme-ov-file 이 링크에서
+YOLOv8n을 다운 받는다. 그리고 그 파일의 경로만 알아두면 된다.
+1. 내 컴퓨터
+2. Jetson-nano2
+3. V8
+4. detectY8.py
+5. brtsp = True 라고 되어있는 것을 brtsp = False로 바꾼다.
+
+이제 v8 파일로 가서
+```
+python3 detectY8.py
+```
+이렇게 하면 카메라가 화면에 뜬다
+
+
+https://github.com/user-attachments/assets/878e4fb5-4c20-44e5-aca2-d68592fc8f16
+***
+
+https://github.com/user-attachments/assets/57ef2d2f-0e9b-4257-810d-bb8ae9becbc7
+***
+
 
