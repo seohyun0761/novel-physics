@@ -177,7 +177,15 @@ pip install torch-1.11.0a0+gitbc2c6ed-cp38-cp38-linux_aarch64.whl
 pip install torchvision-0.12.0a0+9b5a3fe-cp38-cp38-linux_aarch64.whl
 python -c "import torch; print(torch.__version__)"
 ```
+
+만약 오류가 발생 한다면 numpy 설치가 제대로 되지않은것이므로 수동으로 설치해준다.
+
 ```
+conda install numpy
+```
+
+```
+
 (yolo) dli@dli:~$ python
 
 >>> import torch
@@ -186,30 +194,37 @@ python -c "import torch; print(torch.__version__)"
 >>> print(torchvision.__version__)
 >>> print("cuda used", torch.cuda.is_available())
 cuda used True
->>> 
+>>>
 ```
-***
 ```
-이건 코드 아님
-(yolo) dli@dli-desktop:~$ python
-Python 3.8.13 | packaged by conda-forge | (default, Mar 25 2022, 05:56:18) 
-[GCC 10.3.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
- >>> import torch
- >>> import torchvision
- >>> print(torch.__version__)
-1.11.0a0+gitbc2c6ed
- >>> print(torchvision.__version__)
-0.12.0a0+9b5a3fe
- >>> print("cuda used", torch.cuda.is_available())
-cuda used True
- >>>
+git clone https://github.com/Tory-Hwang/Jetson-Nano2
 ```
-***
-이렇게 떠야한다.
-위에서 true가 뜨면 ctrl + d 를 눌러서 탈출한다.
 
 ```
+cd Jetson-Nano2/
+```
+```
+cd V8
+```
+```
+pip install ultralytics
+```
+```
+pip install -r requirements.txt
+```
+```
+pip install ffmpeg-python
+```
+```
+sudo apt install tree
+```
+```
+tree -L 2
+```
+![image](https://github.com/user-attachments/assets/46b318d6-3213-416e-8762-06edb70e23ec)
+```
+결과
+
 git clone https://github.com/Tory-Hwang/Jetson-Nano2
 ```
 ```
