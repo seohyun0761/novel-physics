@@ -113,7 +113,6 @@ python main.py
 # yolo 가상환경 만들기
 yolo는 3.8파이썬이 필요하지만 젯슨은 3.6까지 가능 그래서 가상환경 필요
 
-![image](https://github.com/user-attachments/assets/46b318d6-3213-416e-8762-06edb70e23ec)
 
     uname -a
     wget https://github.com/Archiconda/build-tools/releases/download/0.2.3/Archiconda3-0.2.3-Linux-aarch64.sh
@@ -148,10 +147,10 @@ conda env list
 conda activate yolo
  ```
 
- - "conda activate yolo"를 실행하여 yolo 가상환경으로 진입해서 pytorch, torchvosion을 설치하는 과정이다.
+ - "conda activate yolo"를 실행하여 yolo 가상환경으로 진입해서 pytorch, torchvosion을 설치하는 과정
  - 결과 가상에서 설치 torch, torvosion 다운로드
- - torch은 과학 계산과 머신러닝 알고리즘을 지원하는 프레임워크이며, 주로 PyTorch로 알려진 딥러닝 라이브러리에서 사용한다.
- - Torchvosion은 PyTorch에서 컴퓨터 비전 작업을 쉽게 하기 위한 라이브러리로, 이미지 처리용 데이터셋, 모델, 전처리 도구를 제공한다.
+ - torch은 과학 계산과 머신러닝 알고리즘을 지원하는 프레임워크이며, 주로 PyTorch로 알려진 딥러닝 라이브러리에서 사용
+ - Torchvosion은 PyTorch에서 컴퓨터 비전 작업을 쉽게 하기 위한 라이브러리로, 이미지 처리용 데이터셋, 모델, 전처리 도구를 제공
 
 (yolo) dli@dli:~$
 ```
@@ -161,12 +160,12 @@ pip install -U pip wheel gdown
 gdown https://drive.google.com/uc?id=1hs9HM0XJ2LPFghcn7ZMOs5qu5HexPXwM
 ```
 ![IMG_0543](https://github.com/user-attachments/assets/70cda6f3-3c8c-49f8-a4c7-60ea7a86996e)
-이렇게 떠야 정상
+
 ```
 gdown https://drive.google.com/uc?id=1m0d8ruUY8RvCP9eVjZw4Nc8LAwM8yuGV
 ```
 ![IMG_0544](https://github.com/user-attachments/assets/ea45073d-dd77-4150-a563-50f0bb8db702)
-이렇게 떠야 정상임
+
  
 아래 두 라인을 실행(library 설치) 후 torch, torchvision은 확인이 가능하였다.
 
@@ -228,7 +227,6 @@ tree -L 2
 
 
 
- - 이 위에꺼는 굳이 안해도 된다.
  - 다 했으면 https://github.com/ultralytics/ultralytics?tab=readme-ov-file 이 링크에서
 YOLOv8n을 다운 받는다. 그리고 그 파일의 경로만 알아두면 된다.
 1. 내 컴퓨터
@@ -242,7 +240,6 @@ YOLOv8n을 다운 받는다. 그리고 그 파일의 경로만 알아두면 된�
 python3 detectY8.py
 ```
 이렇게 하면 카메라가 화면에 뜬다
-
 
 
 
