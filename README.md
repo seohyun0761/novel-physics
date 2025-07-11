@@ -246,7 +246,6 @@ python3 detectY8.py
 
 https://github.com/user-attachments/assets/0857dfb9-84d8-4756-97f6-cdb7c37c7005
 
-## 📗 3학년 프로젝트
 
 
 
