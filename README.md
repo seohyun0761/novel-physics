@@ -1,3 +1,4 @@
+## 📘 2학년 프로젝트
 # 젯슨나노
 
 ![화면 캡처 2024-09-06 152822](https://github.com/user-attachments/assets/99dc679c-98e3-477e-9ae4-8ffc1b121021)
@@ -245,7 +246,7 @@ python3 detectY8.py
 
 https://github.com/user-attachments/assets/0857dfb9-84d8-4756-97f6-cdb7c37c7005
 
-
+## 📗 3학년 프로젝트
 
 
 
